@@ -1,3 +1,45 @@
+## 1.19.1 (2021-08-16)
+
+### Bug fixes
+
+Fix another issue around copy-pasting table structure, causing inappropriate opening of copied cell selections.
+
+## 1.19.0 (2021-08-13)
+
+### Bug fixes
+
+Add a  DOM attribute to the content element to avoid automatic translation services from messing with the editable text.
+
+Fix a bug where copy-pasting table content sometimes carried along superfluous table markup.
+
+Fix issue where end-of-textblock detection didn't use the correct selection when in a shadow root.
+
+### New features
+
+The `DecorationSource` interface now exposes a `map` method. Add a translate=no attribute to the editor element by default
+
+## 1.18.11 (2021-07-22)
+
+### Bug fixes
+
+Work around an issue where Chrome and Safari will replace some spaces with non-breaking spaces when putting HTML on the clipboard.
+
+When pasting as plain text (shift-mod-v) apply the marks at the selection to the inserted content.
+
+Fix flaky behavior when starting a composition with a selection that spans multiple blocks.
+
+## 1.18.10 (2021-07-15)
+
+### Bug fixes
+
+Fix an issue where dragging from just outside a draggable node on Chrome would cause odd dragging behavior.
+
+## 1.18.9 (2021-07-11)
+
+### Bug fixes
+
+Fix a bug in the previous release where `handleClickOn` wasn't fired anymore for clicks with the middle or right mouse button.
+
 ## 1.18.8 (2021-06-23)
 
 ### Bug fixes
